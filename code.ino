@@ -1,14 +1,15 @@
 void setup() {
   // put your setup code here, to run once:
-
-
-yoni_blink(8, 300, 4);
+  pinMode(8, INPUT_PULLUP);
+  Serial.begin(115200);
 
 
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if (digitalRead(8) == 0){
+  }
 }
 
 void yoni_blink(int pin, int count, int count_flash) {
